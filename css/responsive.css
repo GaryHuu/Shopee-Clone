@@ -1,0 +1,127 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    :root {
+        --header-heigh: 80px;
+        --header-navbar-heigh: 0px;
+    }
+
+    .header__cart-list {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: var(--header-heigh);
+        padding: 0 calc((100% - 644px ) / 2 );
+    }
+
+    .header__cart-list::after,
+    .header__cart-list-none::after {
+        display: none;
+    }
+}
+
+/*Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header-with-search {
+        padding: 0;
+    }
+
+    .header__cart {
+        width: 50px;
+    }
+
+    .header__search {
+        margin: 0 30px 0 0;
+    }
+
+    .content-img-ads {
+        margin-top: 8px;
+        flex-direction: row;
+    }
+
+    .content-img-ads > div {
+        width: calc(50% - 4px) ;
+    }
+    
+
+}
+
+/*Mobile */
+@media (max-width: 739px){
+    /* tam thoi */
+    /* .trending-search,
+    .main,
+    .footer {
+        display: none;
+    } */
+    
+
+    /*  */
+    .main::before {
+        display: none;
+    }
+    
+    .container {
+        margin-top: 85px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-button-search-on-mobile {
+        display: block;
+    }
+
+    .header-button-search-on-mobile,
+    .header__cart {
+        margin: 0 25px;
+    }
+
+    .header__logo {
+        padding-left: 5px;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    .header__cart {
+        width: unset;
+    }
+
+    .header__search {
+        padding: 0 5px;
+        margin: 0;
+        position: fixed;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        top: calc(var(--header-heigh));
+        left: 0;
+        right: 0;
+        animation: mobileSearchFadeIn linear .3s;
+        display: none;
+    }
+
+    .header__search-suggestion {
+        display: none;
+    }
+
+    .headear_search-history {
+        border: 1px solid var(--b-c);
+        top: calc( var(--header-with-search) + var(--header__search-find) + 6px );
+        position: fixed;
+    }
+
+    .img_ads-top {
+        margin-top: 8px;
+    }
+}
+
+   
